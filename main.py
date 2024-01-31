@@ -1,1 +1,15 @@
-print ("hjllo")
+#weapon order (damage, chance of success(%),durability, value )
+dagger = [10,90,15,10]
+sword =[15,70,12,10]
+mace = [20,50,14,10]
+sweapons = ["Dagger", "Sword", "Mace"]
+for x in sweapons:
+    if x == sweapons[0]:
+        stats = dagger
+    if x == sweapons[1]:
+        stats = sword
+    if x == sweapons[2]:
+        stats = mace
+    print ("\n",x,"\n\tDamage: ",stats[0],"\n\tChance of success: ", stats[1], "\n\tDurability: ", stats[2], "\n\tValue: ",stats[3])
+print (f"Choose your weapon (1.{sweapons[0]}  2.{sweapons[1]}  3.{sweapons[2]})")
+in1 = input("1/2/3:  ")
