@@ -1,8 +1,10 @@
+import functions
 #weapon order (damage, chance of success(%),durability, value )
-dagger = [10,90,15,10]
-sword =[15,70,12,10]
-mace = [20,50,14,10]
+dagger = [10,90,15,10, "Dagger"]
+sword =[15,70,12,10, "Sword"]
+mace = [20,50,14,10, "Mace"]
 sweapons = ["Dagger", "Sword", "Mace"]
+sweapon_stats = [dagger, sword, mace]
 for x in sweapons:
     if x == sweapons[0]:
         stats = dagger
@@ -12,4 +14,12 @@ for x in sweapons:
         stats = mace
     print ("\n",x,"\n\tDamage: ",stats[0],"\n\tChance of success: ", stats[1], "\n\tDurability: ", stats[2], "\n\tValue: ",stats[3])
 print (f"Choose your weapon (1.{sweapons[0]}  2.{sweapons[1]}  3.{sweapons[2]})")
-in1 = input("1/2/3:  ")
+in1 = int(input("1/2/3:  "))
+pweapon = sweapon_stats[in1-1]
+in1 = input("eohw")
+functions.user_stats(pweapon, in1)
+
+
+
+
+
