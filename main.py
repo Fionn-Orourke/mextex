@@ -25,8 +25,9 @@ in1 = int(input("1/2/3:  "))
 pweapon = sweapon_stats[in1-1]
 in1 = input("gd")
 functions.user_stats(pweapon, in1, health, maxhealth, gold)
-Scenarios.sceneall()
 
+Scenarios.sceneall()
+    	
 
 
 
