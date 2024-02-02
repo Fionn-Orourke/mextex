@@ -1,4 +1,5 @@
 import functions
+import Scenarios
 #weapon order (damage, chance of success(%),durability, value )
 health = 100
 ap = 0

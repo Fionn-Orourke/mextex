@@ -11,7 +11,7 @@ def health_func(health, maxhealth, hdif):
         health = maxhealth
 
 def pdamage(in1, ap, enemyhealth, ):
-    if in1 == 1:
+    if in1 == 
         x=2
 
     
