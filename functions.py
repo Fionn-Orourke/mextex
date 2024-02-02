@@ -10,8 +10,9 @@ def health_func(health, maxhealth, hdif):
     if health > maxhealth:
         health = maxhealth
 
-def pdamage(in1, ap, enemyhealth, )
-    if in1 = 
+def pdamage(in1, ap, enemyhealth, ):
+    if in1 == 1:
+        x=2
 
     
 
