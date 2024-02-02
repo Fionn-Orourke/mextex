@@ -1,2 +1,28 @@
-t1_scenarios = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
-t1_scenarios[]
+import random
+def sceneall():
+    scall = [scene1(), scene2(), scene3(), scene4()]
+    r = random.randint(0, 4)
+    print(r)
+
+    scall[r]
+
+
+def scene1():
+    print("1")
+
+    return 0
+
+def scene2():
+    print("2")
+
+    return 0
+
+def scene3():
+    print("3")
+
+    return 0
+
+def scene4():
+    print("4")
+
+    return 0

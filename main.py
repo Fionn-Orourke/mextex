@@ -5,8 +5,8 @@ health = 100
 ap = 0
 maxhealth = 100
 gold = 20
-ehealth = x 
-pfight = [pdamage, ]
+ehealth = 10
+#pfight = [pdamage
 dagger = [10,90,15,10, "Dagger"]
 sword =[15,70,12,10, "Sword"]
 mace = [20,50,14,10, "Mace"]
@@ -25,7 +25,7 @@ in1 = int(input("1/2/3:  "))
 pweapon = sweapon_stats[in1-1]
 in1 = input("gd")
 functions.user_stats(pweapon, in1, health, maxhealth, gold)
-
+Scenarios.sceneall()
 
 
 
