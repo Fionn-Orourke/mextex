@@ -1,8 +1,11 @@
 import functions
 #weapon order (damage, chance of success(%),durability, value )
 health = 100
+ap = 0
 maxhealth = 100
 gold = 20
+ehealth = x 
+pfight = [pdamage, ]
 dagger = [10,90,15,10, "Dagger"]
 sword =[15,70,12,10, "Sword"]
 mace = [20,50,14,10, "Mace"]
