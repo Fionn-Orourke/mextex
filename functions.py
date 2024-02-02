@@ -9,6 +9,19 @@ def health_func(health, maxhealth, hdif):
     health += hdif
     if health > maxhealth:
         health = maxhealth
+    hdif = 0
+
+
+
+
+
+
+
+def action(in1, heal, damg, shop):
+    if in1 == "heal":
+        health_func()
+
+
 
     
 

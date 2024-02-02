@@ -3,6 +3,9 @@ import functions
 health = 100
 maxhealth = 100
 gold = 20
+
+#health func list
+phealth = [100, 100, 0]
 dagger = [10,90,15,10, "Dagger"]
 sword =[15,70,12,10, "Sword"]
 mace = [20,50,14,10, "Mace"]
