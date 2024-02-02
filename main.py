@@ -23,7 +23,7 @@ print (f"Choose your weapon (1.{sweapons[0]}  2.{sweapons[1]}  3.{sweapons[2]})"
 in1 = int(input("1/2/3:  "))
 pweapon = sweapon_stats[in1-1]
 in1 = input("gd")
-functions.user_stats(pweapon, in1, health, maxhealth, gold)
+functions.user_stats(pweapon, in1, phealth[0], phealth[1], gold)
 
 
 
