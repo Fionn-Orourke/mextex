@@ -1,15 +1,20 @@
 import functions
 import Scenarios
+import variables
+mace = variables.mace
+sword = variables.sword
+dagger = variables.dagger
+health = variables.health
+maxhealth = variables.maxhealth
+gold = variables.gold
 #weapon order (damage, chance of success(%),durability, value )
-health = 100
+
 ap = 0
 maxhealth = 100
 gold = 20
 ehealth = 10
 #pfight = [pdamage
-dagger = [10,90,15,10, "Dagger"]
-sword =[15,70,12,10, "Sword"]
-mace = [20,50,14,10, "Mace"]
+
 sweapons = ["Dagger", "Sword", "Mace"]
 sweapon_stats = [dagger, sword, mace]
 for x in sweapons:
@@ -23,10 +28,7 @@ for x in sweapons:
 print (f"Choose your weapon (1.{sweapons[0]}  2.{sweapons[1]}  3.{sweapons[2]})")
 in1 = int(input("1/2/3:  "))
 pweapon = sweapon_stats[in1-1]
-in1 = input("gd")
-functions.user_stats(pweapon, in1, health, maxhealth, gold)
-
-Scenarios.sceneall()
+Scenarios.sceneall(pweapon, health,maxhealth, gold)
     	
 
 
