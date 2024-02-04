@@ -1,0 +1,3 @@
+y = ["yes", "y", "ok", "okay", "sure", "affirmative", "right", "correct", "indeed",
+                      "accepted", "confirmed", "definitely", "certainly", "absolutely", "acknowledged"]
+n = ["no", "n", "nope", "negative", "incorrect", "wrong", "not", "deny", "refuse", "rejected", "cancel", "decline", "dismiss", "nah"]
