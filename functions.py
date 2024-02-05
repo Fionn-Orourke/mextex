@@ -15,11 +15,14 @@ def yesno(in1, userWeapons, health,maxhealth, gold):
                 
             in1 = input("please enter another response: ")
         
-        if in1 in variables.y:
+        elif in1 in variables.y:
             return("y")
             
-        if in1 in variables.n:
+        elif in1 in variables.n:
             return("n")
+        else:
+            in1 = input("please enter another response: ")
+        
         
             
 

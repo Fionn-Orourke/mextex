@@ -52,27 +52,21 @@ def scene4(userWeapons, health,maxhealth, gold):
                 in1 = input("Which one?").lower()
                 print(".lower working")
                 functions.statsCheck(in1, userWeapons, health,maxhealth, gold)
-                n=0
-                g = 0
+                n = 0
                 
                 for x in sweapons:
-                    
-
-                    if in1 != x[n]:
-                        g +=1
-                    
-                    if in1.lower == x[4].lower() or (f"{n+1}"):
-                        variables.userWeapons += x
+                    print(x[4])
+                    n+=1
+                    if in1.lower() == x[4].lower() or in1.lower()==(str(n)):
+                        userWeapons += x
+                        print(userWeapons)
 
 
                         print(f"Ah the {x[4]}, a worthy choice")
                         in1 = input("ff:")
                         functions.statsCheck(in1, userWeapons, health,maxhealth, gold)
                         n+=1
-                    elif g == 2:
-                        in1 = input("please enter a valid response")
-
-                    n+=1
+                    
             else:
                 print("the food section is just over here")
 
