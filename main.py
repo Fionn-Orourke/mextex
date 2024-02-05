@@ -1,3 +1,4 @@
+
 import functions
 import Scenarios
 import variables
@@ -7,6 +8,7 @@ dagger = variables.dagger
 health = variables.health
 maxhealth = variables.maxhealth
 gold = variables.gold
+userWeapons = variables.userWeapons
 #weapon order (damage, chance of success(%),durability, value )
 
 ap = 0
@@ -28,7 +30,7 @@ for x in sweapons:
 print (f"Choose your weapon (1.{sweapons[0]}  2.{sweapons[1]}  3.{sweapons[2]})")
 in1 = int(input("1/2/3:  "))
 variables.userWeapons += sweapon_stats[in1-1]
-Scenarios.sceneall(variables.userWeapons, health,maxhealth, gold)
+Scenarios.sceneall(userWeapons, health,maxhealth, gold)
     	
 
 

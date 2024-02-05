@@ -1,3 +1,4 @@
+
 import random
 import functions
 import variables
@@ -8,7 +9,7 @@ def sceneall(userWeapons, health,maxhealth, gold):
     random.shuffle(scall)
 
     for scene in scall:
-        scene(variables.userWeapons, health, maxhealth, gold)
+        scene(userWeapons, health, maxhealth, gold)
         
     
     return 0
@@ -48,7 +49,8 @@ def scene4(userWeapons, health,maxhealth, gold):
                 print ("\n",n,".",stats[4],"\n\tDamage: ",stats[0],"\n\tChance of success: ", stats[1], "\n\tDurability: ", stats[2], "\n\tValue: ",stats[3])
             in1 = input("Do you want to buy one")
             if functions.yesno(in1 ,userWeapons, health,maxhealth, gold) == "y":
-                in1 = input("Which one?")
+                in1 = input("Which one?").lower()
+                print(".lower working")
                 functions.statsCheck(in1, userWeapons, health,maxhealth, gold)
                 n=0
                 g = 0
@@ -69,7 +71,6 @@ def scene4(userWeapons, health,maxhealth, gold):
                         n+=1
                     elif g == 2:
                         in1 = input("please enter a valid response")
-                        n-=1
 
                     n+=1
             else:

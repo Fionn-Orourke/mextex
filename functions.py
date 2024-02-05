@@ -7,17 +7,18 @@ def health_func(health, maxhealth, hdif):
 def yesno(in1, userWeapons, health,maxhealth, gold):
     while True:
         in1 == in1.lower()
-        if in1.lower() == "stats":
+        if in1 == "stats":
             for x in userWeapons:
                 print("\n",x[4],"\n\tDamage: ",x[0],"\n\tChance of success: ",
                     x[1], "\n\tDurability: ", x[2], "\n\tValue: ",x[3],
                     "\n\nHealth: ",health, "/", maxhealth,"\nGold: ", gold)
                 
             in1 = input("please enter another response: ")
-        elif in1 in variables.y:
+        
+        if in1 in variables.y:
             return("y")
             
-        elif in1 in variables.n:
+        if in1 in variables.n:
             return("n")
         
             
@@ -31,6 +32,7 @@ def weaponLim(userWeapons, buyweapon):
     
 #stats check
 def statsCheck(in1, userWeapons, health,maxhealth, gold):
+    in1 == in1.lower()
     if in1 == "stats":
         for x in userWeapons:
             print("\n",x[4],"\n\tDamage: ",x[0],"\n\tChance of success: ",
