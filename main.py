@@ -19,16 +19,16 @@ sweapons = ["Dagger", "Sword", "Mace"]
 sweapon_stats = [dagger, sword, mace]
 for x in sweapons:
     if x == sweapons[0]:
-        stats = dagger
+        Wstats = dagger
     if x == sweapons[1]:
-        stats = sword
+        Wstats = sword
     if x == sweapons[2]:
-        stats = mace
-    print ("\n",x,"\n\tDamage: ",stats[0],"\n\tChance of success: ", stats[1], "\n\tDurability: ", stats[2], "\n\tValue: ",stats[3])
+        Wstats = mace
+    print ("\n",x,"\n\tDamage: ",Wstats[0],"\n\tChance of success: ", Wstats[1], "\n\tDurability: ", Wstats[2], "\n\tValue: ",Wstats[3])
 print (f"Choose your weapon (1.{sweapons[0]}  2.{sweapons[1]}  3.{sweapons[2]})")
 in1 = int(input("1/2/3:  "))
-pweapon = sweapon_stats[in1-1]
-Scenarios.sceneall(pweapon, health,maxhealth, gold)
+variables.userWeapons += sweapon_stats[in1-1]
+Scenarios.sceneall(variables.userWeapons, health,maxhealth, gold)
     	
 
 
